@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="author" content="At Cost Metals" />
+    <meta name="keywords" content="" />
+
+    <title>At Cost Metals</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End fonts -->
+
+    <!-- core:css -->
+    <link rel="stylesheet" href="assets/vendors/core/core.css" />
+    <!-- endinject -->
+
+    <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/datatables.net-bs5/dataTables.bootstrap5.css"
+    />
+    <!-- End plugin css for this page -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/fonts/feather-font/css/iconfont.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/flag-icon-css/css/flag-icon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <!-- endinject -->
+
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <!-- End layout styles -->
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="horizontal-menu">
+        <nav class="navbar top-navbar">
+          <div class="container">
+            <div class="navbar-content">
+              <a href="home" class="navbar-brand">
+                <img
+                  src="assets/images/logo-100.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a href="dashboard" class="nav-link" title="Sign In"
+                    ><button type="button" class="btn btn-primary btn-sm">
+                      Sign In
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <i
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    class="mdi mdi-google-translate pointer text-dark"
+                    style="font-size: 30px"
+                  ></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <nav class="bottom-navbar">
+          <div class="container">
+            <ul class="nav page-navigation">
+              <li class="nav-item">
+                <a class="nav-link" href="home">
+                  <i class="link-icon" data-feather="box"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup">
+                  <i class="link-icon" data-feather="box"></i>
+                  <span class="menu-title">Join</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="page-wrapper">
+        <div class="page-content">
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <div class="card text-white bg-secondary">
+                <div class="card-header">ACM Products</div>
+                <div class="card-body text-body bg-white">
+                  <div class="table-responsive">
+                    <table
+                      id="pricing-table"
+                      class="table table-striped cell-border"
+                      style="width: 100%"
+                    >
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Item</th>
+                          <th>ACM Sell Price</th>
+                          <th>ACM Buy Back Price</th>
+                          <th>Spot (USD)</th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer border-top">
+          <div
+            class="container d-flex flex-column flex-md-row align-items-center justify-content-between pt-3 small"
+          >
+            <p class="text-muted mb-1 mb-md-0">
+              Copyright &copy; 2024 <a href="/">At Cost Metals</a>.
+            </p>
+            <a href="resources/terms_of_use_acm.pdf">Terms of Use</a>
+            <a href="resources/privacy_policy_notice_acm.pdf"
+              >Privacy Policy Notice</a
+            >
+            <a href="resources/policies_and_procedures_acm.pdf"
+              >Policies and Procedures</a
+            >
+            <p class="text-muted">All rights reserved.</p>
+          </div>
+          <div
+            class="container d-flex flex-column flex-md-row align-items-center justify-content-between pt-2 small"
+          >
+            <p class="text-muted">
+              By logging in and continuing to use our site, you agree to conduct
+              yourself with normal business practices, act according to MLM /
+              networking laws and that you have no restrictions or previous
+              agreements preventing you from working with At Cost Metals.
+            </p>
+          </div>
+          <div
+            class="container d-flex flex-column flex-md-row align-items-center justify-content-between pt-2 pb-3 small"
+          >
+            <p class="text-muted">
+              The services offered by At Cost Metals, LLC may not be suitable
+              for all investors. You should seek financial / investment advice
+              from your own independent financial advisor about your specific
+              goals and situation. Nothing on our site or any marketing by an At
+              Cost Metals Affiliate should be considered investment advice to
+              you specifically. Any purchases (including memberships, at cost
+              bullion, graded bullion or specialty bullion) should only be made
+              after consulting with your own financial advisor.
+            </p>
+          </div>
+        </footer>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+          style="display: none"
+        >
+          <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <span class="text-center h4" id="mmGoogleTranslateModal"
+                  ><i class="mdi mdi-google-translate"></i> Google
+                  Translate</span
+                >
+                <div class="mt-2" id="google_translate_element"></div>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <script>
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+              { pageLanguage: 'en' },
+              'google_translate_element'
+            );
+          }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div>
+    </div>
+
+    <!-- core:js -->
+    <script src="assets/vendors/core/core.js"></script>
+    <!-- endinject -->
+
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="assets/vendors/datatables.net-bs5/dataTables.bootstrap5.js"></script>
+    <script src="assets/vendors/datatables/dataTables.responsive.min.js"></script>
+    <!-- End plugin js for this page -->
+
+    <!-- inject:js -->
+    <script src="assets/vendors/feather-icons/feather.min.js"></script>
+    <script src="assets/js/template.js"></script>
+    <!-- endinject -->
+
+    <!-- Custom js for this page -->
+    <script>
+      'use strict';
+      let pricing_table = new DataTable('#pricing-table', {
+        responsive: true,
+        dom: 'rt',
+        ajax: {
+          url: 'ajax.datatables-public.php',
+          data: {
+            table: 'metal-pricing',
+          },
+        },
+        iDisplayLength: -1,
+        order: [[1, 'asc']],
+        processing: true,
+        columns: [
+          { data: 'image' },
+          { data: 'item' },
+          { data: 'sellprice' },
+          { data: 'buybackprice' },
+          { data: 'spot' },
+        ],
+      });
+    </script>
+    <!-- End custom js for this page -->
+  </body>
+</html>
